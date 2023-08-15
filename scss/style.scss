@@ -1,4 +1,5 @@
 $tablet: 999px;
+$mobile: 639px;
 
 //common
 @import 'common/reset';
@@ -6,3 +7,4 @@ $tablet: 999px;
 
 //main
 @import 'main/visual';
+@import 'main/vids';

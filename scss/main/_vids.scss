@@ -1,0 +1,46 @@
+#vids {
+	width: 100%;
+	padding: 250px 10vw 200px; //좀높게
+	h1 {
+		font: bold 22px/1 'arial';
+		color: #444;
+		margin-bottom: 50px;
+		text-align: center; //인라인 글자가 가운데오게
+	}
+
+	.wrap {
+		width: 100%;
+		//안쪽 자식요소가 좌우배치 되려면 부모요소에 플렉스주면 자식요소가 자동으로 인라인블록화되면서 좌우배치된다.
+		display: flex;
+		flex-wrap: wrap; //반응형되면 줄바꿈되니까 미리
+		justify-content: space-between;
+		gap: 20px;
+
+		article {
+			// 크기를 1:1:1:1로 균등배치(간격20유지하면서)
+			flex: 1;
+
+			.pic {
+				width: 100%;
+				height: 130px;
+				margin-bottom: 15px;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+			h2 {
+				font: bold 16px/1 'arial';
+				color: #555;
+				margin-bottom: 10px;
+			}
+
+			p {
+				font: 14px/1.3 'arial';
+				color: #888;
+			}
+		}
+	}
+}
