@@ -72,6 +72,9 @@ a {
   background: #111;
   position: relative;
   overflow: hidden;
+  display: flex;
+  padding: 0px 10vw;
+  align-items: center;
 }
 #visual video {
   position: absolute;
@@ -81,6 +84,29 @@ a {
   height: 100%;
   object-fit: cover;
   opacity: 0.3;
+}
+#visual .txt {
+  position: relative;
+}
+#visual .txt h1 {
+  font: normal 8vw/1 "arial";
+  color: #fff;
+  margin-bottom: 20px;
+}
+#visual .txt p {
+  width: 70%;
+  font: 20px/1.2 "arial";
+  color: #888;
+  margin-bottom: 80px;
+}
+#visual .txt a {
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+  font: 11px/30px "arial";
+  color: #bbb;
+  border: 1px solid #bbb;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

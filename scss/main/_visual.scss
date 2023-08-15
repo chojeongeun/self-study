@@ -10,7 +10,10 @@
 	background: #111;
 	position: relative; //바운더리 설정
 	overflow: hidden; //자식요소가 삐져나가지 않게
-
+	// txt박스 가운데 배치
+	display: flex;
+	padding: 0px 10vw;
+	align-items: center;
 	video {
 		position: absolute;
 		top: 0;
@@ -19,5 +22,36 @@
 		height: 100%;
 		object-fit: cover;
 		opacity: 0.3;
+	}
+
+	// 같이 겹쳐있는 효과를 주려면 두개다 포지션을 줘야됨
+	//비디오는 밑에 쌓아나갈게 없어서 안줘도 되지만
+	//txt는 앱솔루트 안쪽에 플렉스 기능을 주려는데,
+	//앱솔루트 안쪽에는 flex줄수가없음
+	//포지션을 주긴 주되 앱솔루트나 픽스처럼 화면에서 뜯어져나오는게 아니라,기존의 ui유지하면서 포지션 속성만 추가할수있는 relative로 하기
+	.txt {
+		position: relative;
+		h1 {
+			font: normal 8vw/1 'arial';
+			color: #fff;
+			margin-bottom: 20px;
+		}
+
+		p {
+			width: 70%; //줄바꿈효과
+			font: 20px/1.2 'arial';
+			color: #888;
+			margin-bottom: 80px;
+		}
+
+		a {
+			display: inline-block;
+			width: 300px;
+			height: 30px;
+			font: 11px/30px 'arial'; //세로가운데
+			color: #bbb;
+			border: 1px solid #bbb;
+			text-align: center;
+		}
 	}
 }
