@@ -1,0 +1,23 @@
+// 헤더 높이값이 정해져있지 않ㅡㅁ
+//전체 100vh라고 하면 100등분한 크기
+//100vh에서 헤더의 높이값을 빼는 식으로 높이값 설정할거임
+//헤더 높이값 모르니 강제로 설정해주기
+
+//absolute로 비디오 넣기
+#visual {
+	width: 100%;
+	height: calc(100vh - 120px);
+	background: #111;
+	position: relative; //바운더리 설정
+	overflow: hidden; //자식요소가 삐져나가지 않게
+
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0.3;
+	}
+}
