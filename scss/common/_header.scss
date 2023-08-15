@@ -40,8 +40,9 @@
 }
 
 // 999까지는 코드블럭 안쪽에 있는 구문이 위에있는 구문을 덮어쓰기하게 (0~999)까지는 우선적으로 적용하겠다.
-@media screen and (max-width: 999px) {
+@media screen and (max-width: $tablet) {
 	#header {
+		height: 80px;
 		padding: 20px 10%;
 
 		h1 {

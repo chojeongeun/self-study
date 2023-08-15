@@ -48,6 +48,7 @@ a {
 
 @media screen and (max-width: 999px) {
   #header {
+    height: 80px;
     padding: 20px 10%;
   }
   #header h1 {
@@ -107,6 +108,21 @@ a {
   color: #bbb;
   border: 1px solid #bbb;
   text-align: center;
+}
+
+@media screen and (max-width: 999px) {
+  #visual {
+    height: calc(100vh - 80px);
+  }
+  #visual .txt h1 {
+    font-size: 12vw;
+  }
+  #visual .txt p {
+    width: 100%;
+  }
+  #visual .txt a {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
