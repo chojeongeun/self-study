@@ -1,0 +1,35 @@
+#header {
+	width: 100%; //블록요소지만 명시적으로
+	padding: 50px 10% 30px;
+	display: flex;
+	justify-content: space-between; //사이간격 균등하게
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+
+	h1 {
+		a {
+			font: bold 24px/1 'arial';
+			color: #777;
+		}
+	}
+
+	ul {
+		display: flex;
+		gap: 20px;
+
+		&#gnb {
+			gap: 40px;
+			a {
+				font: bold 14px/1 'arial';
+				color: #777;
+			}
+		}
+
+		&.sns {
+			a {
+				font-size: 20px;
+				color: #888;
+			}
+		}
+	}
+}
