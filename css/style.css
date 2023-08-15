@@ -164,4 +164,23 @@ a {
   color: #888;
 }
 
+@media screen and (max-width: 999px) {
+  #vids {
+    padding: 180px 10vw 150px;
+  }
+  #vids .wrap article {
+    flex: none;
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 639px) {
+  #vids {
+    padding: 140px 10vw 120px;
+  }
+  #vids .wrap article {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
