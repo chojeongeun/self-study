@@ -32,4 +32,39 @@
 			}
 		}
 	}
+
+	.btnCall {
+		display: none;
+	}
 }
+
+// 999까지는 코드블럭 안쪽에 있는 구문이 위에있는 구문을 덮어쓰기하게 (0~999)까지는 우선적으로 적용하겠다.
+@media screen and (max-width: 999px) {
+	#header {
+		padding: 20px 10%;
+
+		h1 {
+			// 세로 가운데 주려고 flex
+			display: flex;
+			align-items: center; //세로 가운데 정렬
+			a {
+				font: bold 20px/1 'arial';
+			}
+		}
+
+		ul {
+			display: none;
+		}
+
+		.btnCall {
+			display: block;
+			font-size: 20px;
+			color: #444;
+		}
+	}
+}
+
+// 넓이값이 고정픽셀값인거는 전체 간격이 총합의 100%가 되도록 퍼센트로 고치기
+//높이값은 고정픽셀값 괜찮지만 스크롤이 길어지니 줄일수있는 값들을 줄이기
+
+//gnb 보일필요없음. 웹 메뉴들이 모바일에서 안되는 경우가 많기 때문에 대신 토글버튼을 보이게 한다.

@@ -41,5 +41,29 @@ a {
   font-size: 20px;
   color: #888;
 }
+#header .btnCall {
+  display: none;
+}
+
+@media screen and (max-width: 999px) {
+  #header {
+    padding: 20px 10%;
+  }
+  #header h1 {
+    display: flex;
+    align-items: center;
+  }
+  #header h1 a {
+    font: bold 20px/1 "arial";
+  }
+  #header ul {
+    display: none;
+  }
+  #header .btnCall {
+    display: block;
+    font-size: 20px;
+    color: #444;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
